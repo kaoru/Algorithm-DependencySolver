@@ -43,7 +43,7 @@ Algorithm::DependencySolver - A dependency solver for scheduling access to a sha
     );
 
     my $solver =
-        Algorithm::DependencySolver::Solver->new(operations => \@operations);
+        Algorithm::DependencySolver::Solver->new(nodes => \@operations);
 
     $solver->to_png("pretty-graph.png");
 
