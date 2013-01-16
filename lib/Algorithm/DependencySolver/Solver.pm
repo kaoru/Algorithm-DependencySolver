@@ -396,7 +396,7 @@ in PNG format
 
 method to_png($file) {
     die "Only sane file names, please (you gave: $file)" unless
-      $file =~ m/^[a-z0-9_\-\.\/]+$/;
+      $file =~ m/^[a-z0-9_\-\.\/]+$/i;
     open my $dot, "|dot -Tpng -o'$file'" or die ("Cannot open pipe to dot (-o $file): $!");
     print $dot $self->get_GraphEasy->as_graphviz;
 }
@@ -413,7 +413,7 @@ in Graphviz's dot format
 
 method to_dot($file) {
     die "Only sane file names, please (you gave: $file)" unless
-      $file =~ m/^[a-z0-9_\-\.\/]+$/;
+      $file =~ m/^[a-z0-9_\-\.\/]+$/i;
     open my $fh, ">", $file or die ("Cannot open to $file: $!");
     print $fh $self->get_GraphEasy->as_graphviz;
 }
