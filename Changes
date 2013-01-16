@@ -1,3 +1,9 @@
+--- 0.03 (16/01/2013) ---
+    * Fixed mistake in POD of Solver
+    * Fixed file name sanity check
+    * Added tests for the Operation and Solver modules
+    * [[ Tests for Traversal module will come in 0.04 ]]
+
 --- 0.02 (10/01/2013) ---
     * Dist::Zilla
     * Git Repository
