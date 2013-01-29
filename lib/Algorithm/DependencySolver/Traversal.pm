@@ -64,9 +64,9 @@ has 'visited' => (
 );
 
 has 'visit' => (
-    is       => 'ro',
+    is       => 'rw',
     isa      => 'CodeRef',
-    required => 1,
+    default  => sub { sub { 1 } },
 );
 
 has 'choose' => (
