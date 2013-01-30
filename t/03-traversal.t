@@ -270,6 +270,89 @@ my @tests = (
     },
 
     #
+    # many operations with three "paths" that could be traversed in any order
+    # (or even in parallel with one another)
+    #
+    {
+        'message' => 'many operations with three independent paths',
+        'input' => [
+            # path one
+            {
+                'id'            => 'a',
+                'depends'       => [ ],
+                'affects'       => [ 'x' ],
+                'prerequisites' => [ ],
+            },
+            {
+                'id'            => 'b',
+                'depends'       => [ 'x' ],
+                'affects'       => [ 'y' ],
+                'prerequisites' => [ ],
+            },
+            {
+                'id'            => 'c',
+                'depends'       => [ 'x', 'y' ],
+                'affects'       => [ ],
+                'prerequisites' => [ ],
+            },
+            # path two
+            {
+                'id'            => 'd',
+                'depends'       => [ ],
+                'affects'       => [ 'm' ],
+                'prerequisites' => [ ],
+            },
+            {
+                'id'            => 'e',
+                'depends'       => [ 'm' ],
+                'affects'       => [ 'n' ],
+                'prerequisites' => [ ],
+            },
+            {
+                'id'            => 'f',
+                'depends'       => [ 'm', 'n' ],
+                'affects'       => [ ],
+                'prerequisites' => [ ],
+            },
+            # path two
+            {
+                'id'            => 'g',
+                'depends'       => [ ],
+                'affects'       => [ 'p' ],
+                'prerequisites' => [ ],
+            },
+            {
+                'id'            => 'h',
+                'depends'       => [ 'p' ],
+                'affects'       => [ 'q' ],
+                'prerequisites' => [ ],
+            },
+            {
+                'id'            => 'i',
+                'depends'       => [ 'p', 'q' ],
+                'affects'       => [ ],
+                'prerequisites' => [ ],
+            },
+        ],
+        'output' => {
+            'one_of' => [
+                # 1, 2, 3
+                [ qw(a b c), qw(d e f), qw(g h i), ],
+                # 1, 3, 2
+                [ qw(a b c), qw(g h i), qw(d e f), ],
+                # 2, 1, 3
+                [ qw(d e f), qw(a b c), qw(g h i), ],
+                # 2, 3, 1
+                [ qw(d e f), qw(g h i), qw(a b c), ],
+                # 3, 1, 2
+                [ qw(g h i), qw(a b c), qw(d e f), ],
+                # 3, 2, 1
+                [ qw(g h i), qw(d e f), qw(a b c), ],
+            ],
+        },
+    },
+
+    #
     # example of an invalid graph
     #
     {
