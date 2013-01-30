@@ -1,3 +1,8 @@
+--- 0.04 (30/01/2013) ---
+    * Fixed bug in Traversal::dryrun()
+    * Added 03-traversal.t, which tests Traversal::run()
+    * Updated dist.ini to list myself as co-author.
+
 --- 0.03 (16/01/2013) ---
     * Fixed mistake in POD of Solver
     * Fixed file name sanity check
