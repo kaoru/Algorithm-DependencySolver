@@ -1,3 +1,7 @@
+--- 0.05 (15/02/2013) ---
+    * Replaced use of smart-match any() for perl 5.8.8
+    * Added test for redundant edge removal
+
 --- 0.04 (30/01/2013) ---
     * Fixed bug in Traversal::dryrun()
     * Added 03-traversal.t, which tests Traversal::run()
