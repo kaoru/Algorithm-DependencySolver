@@ -5,6 +5,7 @@ use MooseX::FollowPBP;
 use MooseX::Method::Signatures;
 
 use List::Compare;
+use List::MoreUtils qw(any);
 
 use Graph::Directed;
 use Graph::Easy;
@@ -359,7 +360,7 @@ method _remove_redundancy($G) {
             my $other_paths_to_pred = grep {
                 # Returns true only if the edge from $pred to $node can
                 # safely be removed
-                $pred ~~ [$G->all_predecessors($_)]
+                any { $_ eq $pred } $G->all_predecessors($_);
             } @other_predecessors;
 
             if ($other_paths_to_pred) {
