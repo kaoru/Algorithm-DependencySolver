@@ -95,13 +95,13 @@ L<Algorithm::DependencySolver::Operation::prerequisites>.
 
 has 'nodes' => (
     is       => 'ro',
-#    isa      => 'ArrayRef[Operation]',
+#   isa      => 'ArrayRef[Operation]',
     required => 1,
 );
 
 has 'nodes_index' => (
     is       => 'ro',
-#    isa      => 'HashRef[Operation]',
+#   isa      => 'HashRef[Operation]',
     builder  => 'build_nodes_index',
     lazy     => 1,
     init_arg => undef,
@@ -184,7 +184,7 @@ method build_Graph() {
     my $G = Graph::Directed->new(
         vertices    => \@vertices,
         edges       => \@edges,
-#        refvertexed => 1,  # refvertexed is broken!
+#       refvertexed => 1,  # refvertexed is broken!
     );
 
     # Note: Graph::Traversal has a bug in it where noderefs are

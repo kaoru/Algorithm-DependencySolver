@@ -86,7 +86,7 @@ that this operation affects (i.e., modifies).
 
 has 'affects' => (
     is       => 'rw',
-#    isa      => 'ArrayRef[String]',
+#   isa      => 'ArrayRef[String]',
     default  => sub { [] },
 );
 

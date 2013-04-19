@@ -59,14 +59,14 @@ has 'Solver' => (
 
 has 'visitable' => (
     is      => 'rw',
-#    isa     => 'ArrayRef[String]',
+#   isa     => 'ArrayRef[String]',
     default => sub { [] },
 );
 
 # indexed by $node->id; value is boolean
 has 'visited' => (
     is      => 'ro',
-#    isa     => 'HashRef[Bool]',
+#   isa     => 'HashRef[Bool]',
     default => sub { {} },
 );
 
