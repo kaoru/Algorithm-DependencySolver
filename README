@@ -1,0 +1,13 @@
+
+
+This archive contains the distribution Algorithm-DependencySolver,
+version 0.05:
+
+  Algorithm::DependencySolver - A dependency solver for scheduling access to a shared resource
+
+This software is copyright (c) 2013 by Lokku Ltd..
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+
