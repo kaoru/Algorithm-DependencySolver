@@ -53,8 +53,8 @@
    "resources" : {
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/kaoru/Algorithm-DependencySolver",
-         "web" : "http://github.com/kaoru/Algorithm-DependencySolver"
+         "url" : "git://github.com/lokku/Algorithm-DependencySolver",
+         "web" : "http://github.com/lokku/Algorithm-DependencySolver"
       }
    },
    "version" : "0.05"
