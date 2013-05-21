@@ -1,7 +1,7 @@
 
 
 This archive contains the distribution Algorithm-DependencySolver,
-version 0.05:
+version 0.06:
 
   Algorithm::DependencySolver - A dependency solver for scheduling access to a shared resource
 
