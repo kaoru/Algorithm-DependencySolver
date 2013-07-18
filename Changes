@@ -1,5 +1,9 @@
 Revision history for perl module Algorithm::DependencySolver
 
+0.07 2013-07-18
+    * Updated Changes to conform to CPAN::Changes::Spec
+    * Added a release test via Dist::Zilla::Plugin::Test::CPAN::Changes
+
 0.06 2013-05-21
     * Updated repository.web and repository.url
       "kaoru" -> "lokku"
