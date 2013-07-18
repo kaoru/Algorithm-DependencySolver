@@ -1,27 +1,29 @@
---- 0.06 (21/05/2013) ---
+Revision history for perl module Algorithm::DependencySolver
+
+0.06 2013-05-21
     * Updated repository.web and repository.url
       "kaoru" -> "lokku"
 
---- 0.05 (15/02/2013) ---
+0.05 2013-02-15
     * Replaced use of smart-match any() for perl 5.8.8
     * Added test for redundant edge removal
 
---- 0.04 (30/01/2013) ---
+0.04 2013-01-30
     * Fixed bug in Traversal::dryrun()
     * Added 03-traversal.t, which tests Traversal::run()
     * Updated dist.ini to list myself as co-author.
 
---- 0.03 (16/01/2013) ---
+0.03 2013-01-16
     * Fixed mistake in POD of Solver
     * Fixed file name sanity check
     * Added tests for the Operation and Solver modules
     * [[ Tests for Traversal module will come in 0.04 ]]
 
---- 0.02 (10/01/2013) ---
+0.02 2013-01-10
     * Dist::Zilla
     * Git Repository
     * Tests
     * etc.
 
---- 0.01 (3/12/2010) ---
+0.01 2010-12-03
     * initial write up by Colin Horne
