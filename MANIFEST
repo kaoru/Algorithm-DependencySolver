@@ -14,4 +14,5 @@ t/00-compile.t
 t/01-operation.t
 t/02-solver.t
 t/03-traversal.t
+t/release-cpan-changes.t
 t/release-pod-syntax.t
