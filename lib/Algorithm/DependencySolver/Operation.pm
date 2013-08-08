@@ -1,6 +1,6 @@
 package Algorithm::DependencySolver::Operation;
 {
-  $Algorithm::DependencySolver::Operation::VERSION = '0.07';
+  $Algorithm::DependencySolver::Operation::VERSION = '1.00';
 }
 
 use Moose;
@@ -11,7 +11,7 @@ Algorithm::DependencySolver::Operation - An operation representation
 
 =head1 VERSION
 
-version 0.07
+version 1.00
 
 =head1 SYNOPSIS
 

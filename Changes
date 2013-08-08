@@ -1,5 +1,11 @@
 Revision history for perl module Algorithm::DependencySolver
 
+1.00 2013-08-08
+    * No change except for version number bump!
+    * Alexandr Ciornii pointed out that Colin actually released the first
+      version as 0.1 so all my subsequent version numbers have been wrong.
+      That's no good. This fixes that.
+
 0.07 2013-07-18
     * Updated Changes to conform to CPAN::Changes::Spec
     * Added a release test via Dist::Zilla::Plugin::Test::CPAN::Changes

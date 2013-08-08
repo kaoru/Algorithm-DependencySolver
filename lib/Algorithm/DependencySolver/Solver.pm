@@ -1,6 +1,6 @@
 package Algorithm::DependencySolver::Solver;
 {
-  $Algorithm::DependencySolver::Solver::VERSION = '0.07';
+  $Algorithm::DependencySolver::Solver::VERSION = '1.00';
 }
 
 use Moose;
@@ -21,7 +21,7 @@ Algorithm::DependencySolver - A dependency solver for scheduling access to a sha
 
 =head1 VERSION
 
-version 0.07
+version 1.00
 
 =head1 SYNOPSIS
 

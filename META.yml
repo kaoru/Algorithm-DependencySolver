@@ -31,4 +31,4 @@ requires:
   MooseX::Method::Signatures: 0.44
 resources:
   repository: git://github.com/lokku/Algorithm-DependencySolver
-version: 0.07
+version: 1.00
