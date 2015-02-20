@@ -4,7 +4,6 @@ use warnings;
 use Test::More;
 use Test::Deep;
 use Test::Exception;
-use Test::TempDir;
 
 use File::Type;
 use File::Spec::Functions;
@@ -42,8 +41,7 @@ my @tests = (
                 'id'            => 'a',
                 'depends'       => [ ],
                 'affects'       => [ ],
-                'prerequisites' => [ ],
-            }
+                'prerequisites' => [ ], }
         ],
         'output'  => [ 'a' ],
     },
