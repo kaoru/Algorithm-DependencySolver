@@ -1,8 +1,5 @@
 package Algorithm::DependencySolver::Solver;
-{
-  $Algorithm::DependencySolver::Solver::VERSION = '1.00';
-}
-
+$Algorithm::DependencySolver::Solver::VERSION = '1.01';
 use Moose;
 use MooseX::FollowPBP;
 use MooseX::Method::Signatures;
@@ -21,7 +18,7 @@ Algorithm::DependencySolver - A dependency solver for scheduling access to a sha
 
 =head1 VERSION
 
-version 1.00
+version 1.01
 
 =head1 SYNOPSIS
 

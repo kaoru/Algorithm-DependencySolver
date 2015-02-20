@@ -2,7 +2,7 @@ use strict;
 use warnings;
 
 use Test::More tests => 5;
-use Test::TempDir;
+use Test::TempDir::Tiny;
 use File::Type;
 use File::Spec::Functions;
 use File::Which;
@@ -43,7 +43,7 @@ my $solver = Algorithm::DependencySolver::Solver->new(
 ok $solver, 'created Solver object with 3 Operations';
 
 my $ft = File::Type->new();
-my $test_tempdir = temp_root();
+my $test_tempdir = tempdir();
 
 SKIP: {
     ## Testing that to_png() works correctly

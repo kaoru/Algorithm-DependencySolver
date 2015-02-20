@@ -1,8 +1,5 @@
 package Algorithm::DependencySolver::Traversal;
-{
-  $Algorithm::DependencySolver::Traversal::VERSION = '1.00';
-}
-
+$Algorithm::DependencySolver::Traversal::VERSION = '1.01';
 use Moose;
 use MooseX::FollowPBP;
 use MooseX::Method::Signatures;
@@ -17,7 +14,7 @@ Algorithm::DependencySolver::Traversal - A module for traversing a dependency gr
 
 =head1 VERSION
 
-version 1.00
+version 1.01
 
 =head1 SYNOPSIS
 
